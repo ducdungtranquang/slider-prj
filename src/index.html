@@ -1,45 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./base.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link href="./base.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
-
-<body>
-  <div class="slider-container">
-    <div class="slider overflow-y-scroll snap-y">
-      <div class="slide flex items-center justify-center bg-blue-500">Slide 1</div>
-      <div class="slide flex items-center justify-center bg-green-500">Slide 2</div>
-      <div class="slide flex items-center justify-center bg-red-500">Slide 3</div>
-      <div class="slide flex items-center justify-center bg-blue-500">Slide 4</div>
-      <div class="slide flex items-center justify-center bg-green-500">Slide 5</div>
-      <div class="slide flex items-center justify-center bg-red-500">Slide 6</div>
-      <div class="slide flex items-center justify-center bg-red-500">Slide 7</div>
-      <!-- Các slide sao chép -->
-      <div class="slide flex items-center justify-center bg-blue-500">Slide 1</div>
-      <div class="slide flex items-center justify-center bg-green-500">Slide 2</div>
-      <div class="slide flex items-center justify-center bg-red-500">Slide 3</div>
-      <div class="slide flex items-center justify-center bg-blue-500">Slide 4</div>
-      <div class="slide flex items-center justify-center bg-green-500">Slide 5</div>
-      <div class="slide flex items-center justify-center bg-red-500">Slide 6</div>
-      <div class="slide flex items-center justify-center bg-red-500">Slide 7</div>
+  <body>
+    <div class="slider-container desktop">
+      <div class="slider overflow-y-scroll snap-y">
+        <div class="slide flex items-center justify-center bg-blue-500">
+          Slide 1
+        </div>
+        <div class="slide flex items-center justify-center bg-green-500">
+          Slide 2
+        </div>
+        <div class="slide flex items-center justify-center bg-red-500">
+          Slide 3
+        </div>
+        <div class="slide flex items-center justify-center bg-blue-500">
+          Slide 4
+        </div>
+        <div class="slide flex items-center justify-center bg-green-500">
+          Slide 5
+        </div>
+        <div class="slide flex items-center justify-center bg-red-500">
+          Slide 6
+        </div>
+        <div class="slide flex items-center justify-center bg-red-500">
+          Slide 7
+        </div>
+        <!-- Các slide sao chép -->
+        <div class="slide flex items-center justify-center bg-blue-500">
+          Slide 1
+        </div>
+        <div class="slide flex items-center justify-center bg-green-500">
+          Slide 2
+        </div>
+        <div class="slide flex items-center justify-center bg-red-500">
+          Slide 3
+        </div>
+        <div class="slide flex items-center justify-center bg-blue-500">
+          Slide 4
+        </div>
+        <div class="slide flex items-center justify-center bg-green-500">
+          Slide 5
+        </div>
+        <div class="slide flex items-center justify-center bg-red-500">
+          Slide 6
+        </div>
+        <div class="slide flex items-center justify-center bg-red-500">
+          Slide 7
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="pagination-circle" data-slide="1"></div>
+        <div class="pagination-circle" data-slide="2"></div>
+        <div class="pagination-circle" data-slide="3"></div>
+        <div class="pagination-circle" data-slide="4"></div>
+        <div class="pagination-circle" data-slide="5"></div>
+        <div class="pagination-circle" data-slide="6"></div>
+        <div class="pagination-circle" data-slide="7"></div>
+      </div>
     </div>
-    <div class="pagination">
-      <div class="pagination-circle" data-slide="1"></div>
-      <div class="pagination-circle" data-slide="2"></div>
-      <div class="pagination-circle" data-slide="3"></div>
-      <div class="pagination-circle" data-slide="4"></div>
-      <div class="pagination-circle" data-slide="5"></div>
-      <div class="pagination-circle" data-slide="6"></div>
-      <div class="pagination-circle" data-slide="7"></div>
-    </div>
-  </div>
-  <script src="./main.js"></script>
-</body>
 
+    <!-- Mobile -->
+    <div id="carousel-container mobile">
+      <div>
+        <ul id="carousel" class="animate">
+          <li class="slide animate">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-1.jpg"
+            />
+          </li>
+          <li class="slide animate">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-2.jpg"
+            />
+          </li>
+          <li class="slide animate">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-3.jpg"
+            />
+          </li>
+          <li class="slide animate">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-4.jpg"
+            />
+          </li>
+          <li class="slide animate">
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/nature-5.jpg"
+            />
+          </li>
+        </ul>
+      </div>
+      <div id="controls">
+        <span id="prev"
+          ><img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/prev.png"
+        /></span>
+        <span id="next"
+          ><img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"
+        /></span>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./mobile.js"></script>
+  </body>
 </html>
